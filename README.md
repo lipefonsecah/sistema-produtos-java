@@ -1,57 +1,28 @@
-package academia;
+# Sistema de Academia em Java
 
-import java.util.Scanner;
+Projeto desenvolvido para prática de Programação Orientada a Objetos em Java durante o curso de Análise e Desenvolvimento de Sistemas.
 
-public class Principal {
+## 📚 Descrição
 
-    public static void main(String[] args) {
+Este sistema simula o cadastro de alunos de uma academia através de um menu interativo no console.  
+O usuário pode cadastrar alunos, visualizar os dados cadastrados e encerrar o sistema.
 
-        Scanner scanner = new Scanner(System.in);
-        aluno aluno = new aluno();
+## ⚙️ Funcionalidades
 
-        int opcao;
+- Cadastrar aluno
+- Informar nome, idade e plano da academia
+- Mostrar os dados do aluno cadastrado
+- Menu interativo no console
 
-        do {
+## 🛠 Tecnologias utilizadas
 
-            System.out.println("\n=== SISTEMA DA ACADEMIA ===");
-            System.out.println("1 - Cadastrar aluno");
-            System.out.println("2 - Mostrar aluno");
-            System.out.println("3 - Sair");
+- Java
+- Eclipse IDE
 
-            System.out.print("Escolha: ");
-            opcao = scanner.nextInt();
-            scanner.nextLine();
+## ▶️ Como executar o projeto
 
-            if (opcao == 1) {
+1. Abrir o projeto no Eclipse
+2. Executar a classe `Principal.java`
+3. Utilizar o menu no console
 
-                System.out.print("Nome: ");
-                aluno.nome = scanner.nextLine();
-
-                System.out.print("Idade: ");
-                aluno.idade = scanner.nextInt();
-                scanner.nextLine();
-
-                System.out.print("Plano (Musculação / Crossfit / Premium): ");
-                aluno.plano = scanner.nextLine();
-
-                System.out.println("Aluno cadastrado com sucesso!");
-
-            }
-
-            else if (opcao == 2) {
-
-                System.out.println("\n--- Dados do Aluno ---");
-                System.out.println("Nome: " + aluno.nome);
-                System.out.println("Idade: " + aluno.idade);
-                System.out.println("Plano: " + aluno.plano);
-
-            }
-
-        } while (opcao != 3);
-
-        System.out.println("Sistema encerrado.");
-
-        scanner.close();
-    }
-
-}
+Exemplo do menu do sistema:
